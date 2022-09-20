@@ -1,0 +1,118 @@
+<html lang="en" class="no-js">
+
+	<head>
+
+		<script src="http://bayanbox.ir/view/6405085859225901541/modernizr.custom.js"></script>
+
+	</head>
+
+<body>
+<style>
+.cbp-spmenu-bottom.cbp-spmenu-open
+{
+    bottom: 0;
+}
+.cbp-spmenu, .cbp-spmenu-push
+.cbp-spmenu-push {
+    transition: all 0.3s ease 0s;
+}
+.cbp-spmenu-bottom {
+    bottom: -150px;
+}
+.cbp-spmenu-horizontal {
+    height: auto;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    z-index: 100;
+}
+.cbp-spmenu {
+    background: #000 none repeat scroll 0 0;
+    position: fixed;
+}
+
+.cbp-spmenu-horizontal a {
+
+    float: right;
+    padding: 0.8em;
+    width: 20%;
+		    text-align: center;
+}
+.cbp-spmenu a {
+    color: Green;
+    display: block;
+    font-size: 1.1em;
+    font-weight: 300;
+		/* text-shadow: 2px 2px 5px hsl(10, 58%, 50%); */
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+.main > section button.active {
+    background: #17171e none repeat scroll 0 0;
+}
+body, html {
+    font-size: 100%;
+}
+.main > section button {
+    background: #17171e none repeat scroll 0 0;
+    border: medium none;
+    color: yellow;
+    cursor: pointer;
+    display: block;
+    font-size: 1em;
+    margin: 10px 0;
+    padding: 1em;
+    width: auto;
+    bottom: -10px;
+    position: fixed;
+}
+
+body {
+    color: #47a3da;
+    font-family: "Lato",Calibri,Arial,sans-serif;
+}
+</style>
+</body>
+	<body class="cbp-spmenu-push">
+		<nav class="cbp-spmenu cbp-spmenu-horizontal cbp-spmenu-bottom" id="cbp-spmenu-s4">
+<div class="container">
+			<div class="main">
+				<section>
+					<button id="showBottom">منو</button>
+				</section>
+			</div>
+		</div>
+ <a href="#up"> ابتدای صفحه </a>
+ <a href="http://virus32.blog.ir/"> خانه </a>
+ <a href="http://virus32.blog.ir/page/contact"> تماس با من </a>
+ <a href="http://virus32.blog.ir/page/password"> رمز مطالب </a>
+ <a href="#Down"> انتهای صفحه </a>
+		</nav>
+		<script src="http://bayanbox.ir/view/4189264808873945212/classie.js"></script>
+		<script>
+			var 
+				menuBottom = document.getElementById( 'cbp-spmenu-s4' ),
+				showBottom = document.getElementById( 'showBottom' ),
+
+				body = document.body;
+			showBottom.onclick = function() {
+
+				classie.toggle( this, 'active' );
+
+				classie.toggle( menuBottom, 'cbp-spmenu-open' );
+
+				disableOther( 'showBottom' );
+
+			};
+			function disableOther( button ) {
+
+				if( button !== 'showBottom' ) {
+					classie.toggle( showBottom, 'disabled' );
+				}
+			}
+		</script>
+	</body>
+</html>
